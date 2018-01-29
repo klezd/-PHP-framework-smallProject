@@ -8,9 +8,7 @@
 namespace App\Controller;
 
 
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -28,6 +26,4 @@ class projectController extends Controller
         }
         return $this->render('small-project/homepage.html.twig', ['content' => $content]);
     }
-
-
 }
